@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body{
+    
+    background:lightblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    min-height: 1000px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr   2fr ;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .cote_gauche {
+    position: relative;
+    background: #003147 ;
+    padding: 40px;
+}
+
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactinfo{
+    padding-top:40px ;
+
+}
+
+.titre{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactinfo ul {
+    position: relative;
+}
+
+.contactinfo ul li {
+    position: relative;
+    list-style: none;
+    margin:10px 0;
+    cursor: pointer;
+
+}
+.contactinfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    color: turquoise;
+
+
+}
+.contactinfo ul li span{
+    color: white;
+}
+.profile .imgc{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:hidden ;
+    -webkit-transition : -webkit-transform 1s ;
+    
+}
+
+.profile .imgc:hover{
+    -webkit-transform : rotate(360deg) translateZ(0)
+    
+}
+
+.profile h2{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+    
+}
+
+.container .cote_droit {
+    position: relative;
+    background: #ffff ;
+    padding: 40px;
+}
+
+.moi{
+    margin-bottom: 50px;
+
+}
+
+.moi:last-child{
+    margin-bottom: 0;
+}
+
+.titre2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333;
+}
