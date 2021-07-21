@@ -109,11 +109,11 @@ body{
     position: relative;
     background: #ffff ;
     padding: 40px;
-}
+    }
 
 .moi{
     margin-bottom: 50px;
-
+    
 }
 
 .moi:last-child{
@@ -125,8 +125,20 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 p{
     color: #333;
+}
+
+
+@media (max-width:1000px){
+
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr) ;
+
+    }
+    
 }
